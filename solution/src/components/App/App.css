@@ -112,7 +112,7 @@ main {
 }
 
 .double-click {
-  width: calc(100% - 30px);
+  width: calc(100% - 48px);
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 2rem;
