@@ -50,7 +50,7 @@ function App() {
       <Header counts={count} handleClick={handleMarkClick} />
 
       <main>
-        {/* {guideShow ? (
+        {guideShow ? (
           <p className="double-click">
             DOUBLE CLICK ON NOTIFICATION ITEM TO MARK AS UNREAD
             <button
@@ -63,7 +63,7 @@ function App() {
               </svg>
             </button>
           </p>
-        ) : null} */}
+        ) : null}
         {userData.map((items) => {
           if (items.notifType === "REACTION") {
             return (
