@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-----------------------------------*\
+     VARIABLES
+/*-----------------------------------*/
+:root {
+  --White: rgb(255, 255, 255);
+  --Very-light-grayish-blue: rgb(247, 250, 253);
+  --Light-grayish-blue-1: rgb(229, 239, 250);
+  --Light-grayish-blue-2: rgb(221, 231, 238);
+  --Grayish-blue: rgb(147, 157, 174);
+  --Dark-grayish-blue: rgb(94, 103, 120);
+  --Very-dark-blue: rgb(28, 32, 43);
+}
+
+/*-----------------------------------*\
+     ATTRIBUTION
+/*-----------------------------------*/
+.attribution {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 5rem;
+  line-height: 1.7;
+  font-family: monospace;
+  padding-inline: 2rem;
+}
+
+.attribution a {
+  color: red;
+}
+
+html {
+  background-color: var(--Light-grayish-blue);
+}
+
+body {
+  max-width: 45.625rem;
+  margin: 0 auto;
+  background-color: white;
+
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+img {
+  display: block;
+}
+
+/*-----------------------------------*\
+     HEADER
+/*-----------------------------------*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.3125rem;
+  margin-left: 1.0625rem;
+}
+
+.notif-count {
+  margin-left: 0.625rem;
+  color: white;
+  background-color: rgb(7 50 128);
+  width: 2rem;
+  height: 1.625rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4375rem;
+  font-size: 0.9375rem;
+}
+
+.notif-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--Grayish-blue);
+  color: rgb(104 108 111);
+  font-size: 0.8125rem;
+  margin-right: 1.0625rem;
+  cursor: pointer;
+  transition: all 50ms ease-out;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.notif-button:hover {
+  color: rgb(0 59 187);
+}
+
+/*-----------------------------------*\
+     MAIN
+/*-----------------------------------*/
+main {
+  padding-top: 1.9375rem;
+}
+
+.double-click {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-block: 1.2rem;
+  padding-inline: 3.2rem;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  background-color: rgb(236, 243, 250);
+  word-spacing: 2px;
+  position: relative;
+}
+
+.double-click-x {
+  position: absolute;
+  top: 8px;
+  right: 13px;
+  border: 1px solid black;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/*-----------------------------------*\
+     NOTIFICATION ITEM
+/*-----------------------------------*/
+.unread {
+  background-color: var(--Very-light-grayish-blue);
+  background-color: rgb(241 248 255);
+}
+
+.notif-item {
+  display: flex;
+  flex-direction: row;
+  width: calc(100% - 2rem);
+  max-width: 41.875rem;
+  margin: 0 auto;
+  gap: 0.8125rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.875rem;
+  padding-left: 1rem;
+  padding-right: 0.875rem;
+  font-size: 0.9375rem;
+  border-radius: 0.625rem;
+}
+
+.notif-item.unread {
+  box-shadow: 1px 8px 16px 3px rgb(250 249 254);
+}
+
+.notif-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.notif-item-profile-img-container > img {
+  height: 2.3125rem;
+  width: 2.3125rem;
+}
+
+.text-container > * {
+  display: inline;
+}
+
+.profile-name {
+  font-weight: 800;
+  color: var(--Very-dark-blue);
+  cursor: pointer;
+  transition: all 50ms ease-out;
+}
+
+.profile-name:hover {
+  color: rgb(0 59 187);
+}
+
+.notif-type {
+  margin-left: 6px;
+  color: rgb(112 116 125);
+  font-weight: 500;
+}
+
+.notif-message {
+  margin-left: 6px;
+  font-weight: 600;
+  color: var(--Dark-grayish-blue);
+  transition: all 50ms ease-out;
+  cursor: pointer;
+}
+
+.notif-message:hover {
+  color: rgb(0 59 187);
+}
+
+.notif-group-message {
+  margin-left: 6px;
+
+  color: rgb(57 91 165);
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 50ms ease-out;
+}
+
+.notif-group-message:hover {
+  color: rgb(0 59 187);
+}
+
+.notif-time {
+  display: block;
+  margin-top: 0.1875rem;
+  color: rgb(155 158 167);
+}
+
+.red-dot {
+  margin-left: 0.5rem;
+}
+.private-message-container {
+  display: block;
+  border: 1px solid rgb(226 230 233);
+  padding-top: 1.125rem;
+  padding-left: 1rem;
+  margin-top: 0.75rem;
+  padding-bottom: 0.9375rem;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  transition: all 100ms ease-out;
+}
+
+.private-message-container:hover {
+  background-color: rgb(229 239 249);
+}
+
+@media screen and (max-width: 374px) {
+  .private-message-container {
+    padding-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 378px) {
+  .private-message-container {
+    padding-right: 1.5rem;
+  }
+}
+
+.notif-private-message {
+  color: rgb(112 116 125);
+  font-weight: 500;
+}
+
+.notif-image-container {
+  border: 4px solid transparent;
+  border-radius: 2px;
+  margin-left: auto;
+  transition: all 50ms ease-out;
+  cursor: pointer;
+  display: flex;
+  height: fit-content;
+}
+
+.notif-image-container:hover {
+  border: 4px solid rgb(229 239 249);
+  border-radius: 11px;
+}
+
+.notif-image-container > img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  html {
+    background-color: var(--Very-light-grayish-blue);
+  }
+
+  body {
+    margin: 0 auto;
+    margin-top: 3.9375rem;
+    border-radius: 1rem;
+    padding-top: 2.5rem;
+    margin-bottom: 5.5625rem;
+    min-height: 51.8125rem;
+    box-shadow: 1px 1px 20px 9px rgb(185 185 185 / 13%);
+  }
+
+  h1 {
+    margin-left: 2.0625rem;
+  }
+
+  main {
+    padding-top: 2.25rem;
+  }
+
+  .notif-item {
+    font-size: 1rem;
+  }
+
+  .notif-item:not(:last-child) {
+    margin-bottom: 0.9375rem;
+  }
+
+  .notif-button {
+    margin-right: 1.9375rem;
+    font-size: 16px;
+  }
+
+  .private-message-container {
+    max-width: 35.375rem;
+    padding-left: 1.25rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1rem;
+  }
+
+  .notif-image-container {
+    margin-left: auto;
+  }
+}

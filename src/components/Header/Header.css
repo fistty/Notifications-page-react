@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 730px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.3125rem;
+  margin-left: 1.0625rem;
+}
+
+.notif-count {
+  margin-left: 0.625rem;
+  color: white;
+  background-color: rgb(7 50 128);
+  width: 2rem;
+  height: 1.625rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.4375rem;
+  font-size: 0.9375rem;
+}
+
+.notif-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--Grayish-blue);
+  color: rgb(104 108 111);
+  font-size: 0.8125rem;
+  margin-right: 1.0625rem;
+  cursor: pointer;
+  transition: all 50ms ease-out;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.notif-button:hover {
+  color: rgb(0 59 187);
+}
+
