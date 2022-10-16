@@ -41,7 +41,7 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setGuideShow(false)
-    }, 5000);
+    }, 6000);
   });
 
   return (
