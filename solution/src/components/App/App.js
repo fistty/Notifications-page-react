@@ -7,7 +7,7 @@ import GroupNotification from "../GroupNotification/GroupNotification";
 import "./App.css";
 import PrivateNotification from "../PrivateNotification/PrivateNotification";
 import PictureCommentNotification from "../PictureCommentNotification/PictureCommentNotification";
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
