@@ -111,6 +111,7 @@ main {
 }
 
 .double-click {
+  width: calc(100% - 30px);
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -122,21 +123,31 @@ main {
   background-color: rgb(236, 243, 250);
   word-spacing: 2px;
   position: relative;
+  border-radius: 8px;
+  transition: all 200ms ease-out;
 }
 
 .double-click-x {
   position: absolute;
-  top: 8px;
-  right: 13px;
-  border: 1px solid black;
+  top: -8px;
+  right: -8px;
+  border: none;
   background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 23px;
   height: 23px;
+  aspect-ratio: 1 / 1;
   cursor: pointer;
   font-size: 15px;
+  fill: black;
+  transform: scale(1.14);
+  transition: all 200ms ease-out;
+}
+
+.double-click-x:active {
+  transform: scale(0.5);
 }
 
 /*-----------------------------------*\
@@ -163,7 +174,7 @@ main {
 }
 
 .notif-item.unread {
-  box-shadow: 1px 8px 16px 3px rgb(250 249 254);
+  box-shadow: 7px 8px 16px 3px rgb(250 249 254);
 }
 
 .notif-item:not(:last-child) {
