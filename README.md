@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Solution](https://www.frontendmentor.io/solutions/loopstudios-landing-page-scrollin-animation-and-custom-designs-yfMlasdYg4)
+- Solution URL: [Frontend Solution](https://www.frontendmentor.io/solutions/notifications-page-double-click-function-3t4DbQ0J7L)
 - Live Site URL: [Netlify Live Site](https://fistty-notificationpage.netlify.app/)
 
 ## My process
