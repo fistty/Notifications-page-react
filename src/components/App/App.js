@@ -8,6 +8,7 @@ import "./App.css";
 import PrivateNotification from "../PrivateNotification/PrivateNotification";
 import PictureCommentNotification from "../PictureCommentNotification/PictureCommentNotification";
 import Footer from "../Footer/Footer";
+import unread from "../../icon-work.svg"
 
 function App() {
   const [count, setCount] = useState(0);
